@@ -32,7 +32,7 @@ const svgString = `
 export default function Section3() {
   return (
     <>
-      <section className="dark">
+      <section className="dark" id='work'>
         <h1 className="text-6xl text-center">My Work!</h1>
         <h1 className="text-sm text-slate-700 mb-10">going deeper...</h1>
         <div className="flex flex-wrap justify-center ">

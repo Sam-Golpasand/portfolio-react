@@ -31,7 +31,7 @@ const svgString = `
 export default function Section4() {
   return (
     <>
-      <section >
+      <section id='service'>
         <h1 className="text-4xl text-center"> Have a dream? Let's make it a reality! </h1>
         <p className="text-md font-light m-2 flex justify-center text-center"> It's more than just coding; it's about bringing your digital dreams to life and showcasing them to the world in their full glory.</p>
 
