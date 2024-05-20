@@ -1,0 +1,58 @@
+import React from 'react'
+import avatar from "../imgs/avatar2.jpg"
+import AnimatedWave from './AnimatedWave'
+
+const svgString = `
+<svg id="visual" viewBox="0 0 900 200"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+  <rect x="0" y="0" width="900" height="200" fill="#232d3f"></rect>
+  <path
+    d="M0 84L15 86.5C30 89 60 94 90 94.3C120 94.7 150 90.3 180 87.2C210 84 240 82 270 84.7C300 87.3 330 94.7 360 99.8C390 105 420 108 450 105.5C480 103 510 95 540 88.8C570 82.7 600 78.3 630 82.7C660 87 690 100 720 100C750 100 780 87 810 86.3C840 85.7 870 97.3 885 103.2L900 109L900 0L885 0C870 0 840 0 810 0C780 0 750 0 720 0C690 0 660 0 630 0C600 0 570 0 540 0C510 0 480 0 450 0C420 0 390 0 360 0C330 0 300 0 270 0C240 0 210 0 180 0C150 0 120 0 90 0C60 0 30 0 15 0L0 0Z"
+    fill="#fcaf3c"
+    finalpath="M0 76L15 82.5C30 89 60 102 90 105.2C120 108.3 150 101.7 180 94.2C210 86.7 240 78.3 270 80.7C300 83 330 96 360 96.2C390 96.3 420 83.7 450 77.2C480 70.7 510 70.3 540 72.8C570 75.3 600 80.7 630 81C660 81.3 690 76.7 720 77.5C750 78.3 780 84.7 810 87.2C840 89.7 870 88.3 885 87.7L900 87L900 0L885 0C870 0 840 0 810 0C780 0 750 0 720 0C690 0 660 0 630 0C600 0 570 0 540 0C510 0 480 0 450 0C420 0 390 0 360 0C330 0 300 0 270 0C240 0 210 0 180 0C150 0 120 0 90 0C60 0 30 0 15 0L0 0Z"></path>
+  <path
+    d="M0 87L15 87.8C30 88.7 60 90.3 90 90.5C120 90.7 150 89.3 180 84.7C210 80 240 72 270 72.3C300 72.7 330 81.3 360 83.2C390 85 420 80 450 80.7C480 81.3 510 87.7 540 90.7C570 93.7 600 93.3 630 87.3C660 81.3 690 69.7 720 69.8C750 70 780 82 810 87.2C840 92.3 870 90.7 885 89.8L900 89L900 0L885 0C870 0 840 0 810 0C780 0 750 0 720 0C690 0 660 0 630 0C600 0 570 0 540 0C510 0 480 0 450 0C420 0 390 0 360 0C330 0 300 0 270 0C240 0 210 0 180 0C150 0 120 0 90 0C60 0 30 0 15 0L0 0Z"
+    fill="#bb8332"
+    finalpath="M0 82L15 82.2C30 82.3 60 82.7 90 78.2C120 73.7 150 64.3 180 63.5C210 62.7 240 70.3 270 76.2C300 82 330 86 360 85.3C390 84.7 420 79.3 450 79.2C480 79 510 84 540 82.5C570 81 600 73 630 71.3C660 69.7 690 74.3 720 73.2C750 72 780 65 810 66.3C840 67.7 870 77.3 885 82.2L900 87L900 0L885 0C870 0 840 0 810 0C780 0 750 0 720 0C690 0 660 0 630 0C600 0 570 0 540 0C510 0 480 0 450 0C420 0 390 0 360 0C330 0 300 0 270 0C240 0 210 0 180 0C150 0 120 0 90 0C60 0 30 0 15 0L0 0Z"></path>
+  <path
+    d="M0 56L15 57.8C30 59.7 60 63.3 90 65C120 66.7 150 66.3 180 65.8C210 65.3 240 64.7 270 62.5C300 60.3 330 56.7 360 56.2C390 55.7 420 58.3 450 60C480 61.7 510 62.3 540 60.7C570 59 600 55 630 53C660 51 690 51 720 54.7C750 58.3 780 65.7 810 67.5C840 69.3 870 65.7 885 63.8L900 62L900 0L885 0C870 0 840 0 810 0C780 0 750 0 720 0C690 0 660 0 630 0C600 0 570 0 540 0C510 0 480 0 450 0C420 0 390 0 360 0C330 0 300 0 270 0C240 0 210 0 180 0C150 0 120 0 90 0C60 0 30 0 15 0L0 0Z"
+    fill="#7d5928"
+    finalpath="M0 59L15 57.5C30 56 60 53 90 54C120 55 150 60 180 58.5C210 57 240 49 270 48C300 47 330 53 360 57.3C390 61.7 420 64.3 450 61.3C480 58.3 510 49.7 540 48.5C570 47.3 600 53.7 630 58.3C660 63 690 66 720 64.5C750 63 780 57 810 55.3C840 53.7 870 56.3 885 57.7L900 59L900 0L885 0C870 0 840 0 810 0C780 0 750 0 720 0C690 0 660 0 630 0C600 0 570 0 540 0C510 0 480 0 450 0C420 0 390 0 360 0C330 0 300 0 270 0C240 0 210 0 180 0C150 0 120 0 90 0C60 0 30 0 15 0L0 0Z"></path>
+  <path
+    d="M0 26L15 26.2C30 26.3 60 26.7 90 29.8C120 33 150 39 180 43C210 47 240 49 270 49.2C300 49.3 330 47.7 360 45.3C390 43 420 40 450 40.3C480 40.7 510 44.3 540 44.8C570 45.3 600 42.7 630 41.7C660 40.7 690 41.3 720 40.7C750 40 780 38 810 35.5C840 33 870 30 885 28.5L900 27L900 0L885 0C870 0 840 0 810 0C780 0 750 0 720 0C690 0 660 0 630 0C600 0 570 0 540 0C510 0 480 0 450 0C420 0 390 0 360 0C330 0 300 0 270 0C240 0 210 0 180 0C150 0 120 0 90 0C60 0 30 0 15 0L0 0Z"
+    fill="#44331d"
+    finalpath="M0 39L15 40.7C30 42.3 60 45.7 90 44.7C120 43.7 150 38.3 180 37C210 35.7 240 38.3 270 38.3C300 38.3 330 35.7 360 35C390 34.3 420 35.7 450 35C480 34.3 510 31.7 540 33.5C570 35.3 600 41.7 630 44C660 46.3 690 44.7 720 42.3C750 40 780 37 810 35.3C840 33.7 870 33.3 885 33.2L900 33L900 0L885 0C870 0 840 0 810 0C780 0 750 0 720 0C690 0 660 0 630 0C600 0 570 0 540 0C510 0 480 0 450 0C420 0 390 0 360 0C330 0 300 0 270 0C240 0 210 0 180 0C150 0 120 0 90 0C60 0 30 0 15 0L0 0Z"></path>
+  <path
+    d="M0 24L15 23.5C30 23 60 22 90 20C120 18 150 15 180 14.8C210 14.7 240 17.3 270 18C300 18.7 330 17.3 360 17.5C390 17.7 420 19.3 450 21.8C480 24.3 510 27.7 540 26.5C570 25.3 600 19.7 630 18.5C660 17.3 690 20.7 720 23.7C750 26.7 780 29.3 810 30.7C840 32 870 32 885 32L900 32L900 0L885 0C870 0 840 0 810 0C780 0 750 0 720 0C690 0 660 0 630 0C600 0 570 0 540 0C510 0 480 0 450 0C420 0 390 0 360 0C330 0 300 0 270 0C240 0 210 0 180 0C150 0 120 0 90 0C60 0 30 0 15 0L0 0Z"
+    fill="#0f0f0f"
+    finalpath="M0 11L15 14.2C30 17.3 60 23.7 90 25.3C120 27 150 24 180 23.7C210 23.3 240 25.7 270 26C300 26.3 330 24.7 360 23C390 21.3 420 19.7 450 18.2C480 16.7 510 15.3 540 14.7C570 14 600 14 630 16.7C660 19.3 690 24.7 720 27.2C750 29.7 780 29.3 810 27.7C840 26 870 23 885 21.5L900 20L900 0L885 0C870 0 840 0 810 0C780 0 750 0 720 0C690 0 660 0 630 0C600 0 570 0 540 0C510 0 480 0 450 0C420 0 390 0 360 0C330 0 300 0 270 0C240 0 210 0 180 0C150 0 120 0 90 0C60 0 30 0 15 0L0 0Z"></path>
+</svg>
+`;
+
+export default function Section2() {
+
+  return (
+    <>
+      <section id="about">
+        <div className="grid lg:grid-cols-1 xl:grid-cols-2 gap-4">
+          <div className="flex justify-center">
+            <img src={avatar} className="max-h-50  rounded-xl transition delay-500 duration-1000 hover:scale-105 hover:shadow-2xl " alt="Sam Golpasand" />
+          </div>
+          <div className="flex flex-col justify-center p-4 md:p-8">
+            <h1 className="text-3xl md:text-4xl mb-4 hover:underline hover:decoration-indigo-500 font-medium transition duration-1000">Sam G.</h1>
+            <p className=" font-extralight text-sm md:text-base lg:text-lg">
+              My journey in programming is an odyssey across a digital cosmos. I started with fundamental concepts, the constellations that mapped out the basics. Diving deeper, I navigated through the nebulae of data structures and the event horizons of complex algorithms.
+              <br /><br />
+              Frameworks and libraries became my vessels, enabling swift passage through new realms of code. Challenges arose, like cryptic bugs, but each was a lesson that expanded my knowledge galaxy.
+              <br /><br />
+              Collaboration with fellow coders brought shared victories and insights. Every problem solved and project launched was a star ignited in my expanding universe of experience, a continuous adventure in the ever-evolving expanse of technology.
+            </p>
+          </div>
+        </div>
+        <a href=""><button className="btn btn-link text-transparent hover:text-gray-900 ">want to know more about me?</button></a>
+      </section>
+
+
+      <AnimatedWave svgString={svgString} />
+    </>
+  )
+}
