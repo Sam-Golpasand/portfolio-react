@@ -42,7 +42,7 @@ export default function AnimatedWave ({ svgString }){
           start: 'top center',
           end: 'bottom top',
           scrub: 1,
-          markers: false, // Enable markers for debugging
+          markers: true, // Enable markers for debugging
         },
         duration: 2,
         ease: 'none',
