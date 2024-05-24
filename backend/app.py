@@ -1,4 +1,4 @@
-from flask import Flask, redirect, render_template, request, session, flash, url_for, send_from_directory
+from flask import Flask, redirect, render_template, request, session, flash, url_for, send_from_directory, jsonify
 from flask_bcrypt import Bcrypt
 from dotenv import load_dotenv
 from flask_session import Session
@@ -25,13 +25,15 @@ Session(app)
 def index():
     return render_template("index.html")
 
-@app.route("/blog")
+
+@app.route("/api/blog")
 def blog():
     conn, c = dbCon()
     c.execute("SELECT * FROM blogPost ORDER BY date_posted DESC")
     blogs = c.fetchall()
     dbClose(conn, c)
-    return render_template("blog.html", blogs=blogs)
+    blogs = [dict(zip([key[0] for key in c.description], row)) for row in blogs]
+    return jsonify(blogs)
 
 
 
