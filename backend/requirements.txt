@@ -1,5 +1,0 @@
-Flask==3.0.3
-flask_bcrypt==1.0.1
-Markdown==3.6
-python_bcrypt==0.3.2
-Werkzeug==3.0.3
