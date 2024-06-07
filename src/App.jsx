@@ -48,7 +48,7 @@ export default function HomePage() {
       >
         <InfinitySpin
           width={200}
-          color="#a91a0a"
+          color="#FFF"
           visible={true}
           ariaLabel='infinity-loading-spinner'
         />

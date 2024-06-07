@@ -65,3 +65,19 @@ background-size: cover;
   background-position: center;
   background-image: url("./imgs/Sneaker80.png");
 }
+/* Add this to your CSS file */
+h1.relative.inline-block::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0.125rem; /* Adjust height as needed */
+  background-color: #6366F1; /* Adjust color as needed */
+  transition: width 0.3s ease;
+}
+
+h1.relative.inline-block:hover::after {
+  width: 100%;
+}
+

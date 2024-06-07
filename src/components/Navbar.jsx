@@ -6,7 +6,7 @@ export default function Navbar() {
     <div className="flex justify-center mt-4">
       <nav className=" flex navbar w-8/12 max-sm:w-full mx-2 bg-neutral text-neutral-content border-[2px] border-black rounded-full backdrop-blur bg-black/40">
         <div className="flex-1">
-          <a href="/" className="btn btn-ghost normal-case text-xl font-extralight text-normal not-italic rounded-full">Sam Golpasand</a>
+          <a href="/" className="btn btn-ghost normal-case text-xl font-semibold text-normal not-italic rounded-full">Sam Golpasand</a>
         </div> 
         <div className="flex-none space-x-2">
           <a href="/#about" className="btn btn-ghost max-lg:hidden">About</a>

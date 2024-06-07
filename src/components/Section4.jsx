@@ -9,7 +9,7 @@ export default function Section4() {
     <>
       <section id='service'>
         <h1 className="text-4xl text-center"> Have a dream? Let's make it a reality! </h1>
-        <p className="text-md font-light m-2 flex justify-center text-center"> It's more than just coding; it's about bringing your digital dreams to life and showcasing them to the world in their full glory.</p>
+        <p className="text-md m-2 flex justify-center text-center font-normal"> It's more than just coding; it's about bringing your digital dreams to life and showcasing them to the world in their full glory.</p>
 
         <div className="flex flex-wrap justify-center my-8 mb-32">
           {/* First Pricing */}
@@ -18,15 +18,15 @@ export default function Section4() {
               <div className="p-8 flex flex-col justify-between">
                 <div>
                   <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Essential <br />Website</div>
-                  <a href="/#contact" className="block mt-1 text-lg leading-tight font-medium text-white hover:underline">Perfect for startups and personal brands.</a>
+                  <a href="/#contact" className="block mt-1 text-lg leading-tight font-medium text-white hover:text-indigo-300 transition duration-300">Perfect for startups and personal brands.</a>
                   <p className="mt-2 text-gray-300">Establish a strong, engaging digital footprint with our comprehensive starter package website.</p>
                   <div className="mt-4">
-                    <span className="text-2xl font-bold text-white">£499*</span>
+                    <span className="text-2xl font-semibold text-white">£499*</span>
                   </div>
                 </div>
                 <div className="mt-6">
                   <div className="rounded-md shadow">
-                    <a href="/#contact" className="w-full flex items-center justify-center px-8 py-3 bg-indigo-600 hover:scale-105 hover:bg-indigo-500 transition ease-in-out duration-300 rounded-xl"> Get started </a>
+                    <a href="/#contact" className="w-full flex items-center justify-center px-8 py-3 bg-indigo-600 hover:scale-105 hover:bg-indigo-500 transition ease-in-out duration-300 rounded-xl"> Let's Start </a>
                   </div>
                 </div>
               </div>
@@ -51,15 +51,15 @@ export default function Section4() {
               <div className="p-8 flex flex-col justify-between">
                 <div>
                   <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Professional <br /> WebApp</div>
-                  <a href="/#contact" className="block mt-1 text-lg leading-tight font-medium text-white hover:underline">Perfect for larger brands and portfolios.</a>
+                  <a href="/#contact" className="block mt-1 text-lg leading-tight font-medium text-white  hover:text-indigo-300 transition duration-300">Perfect for larger brands and portfolios.</a>
                   <p className="mt-2 text-gray-300">Establish a strong, engaging digital footprint with our all inclusive webapp package.</p>
                   <div className="mt-4">
-                    <span className="text-xl font-bold text-white">Individual Pricing</span>
+                    <span className="text-xl font-semibold text-white">Individual Pricing</span>
                   </div>
                 </div>
                 <div className="mt-6">
                   <div className="rounded-md shadow">
-                    <a href="/#contact" className="w-full flex items-center justify-center px-8 py-3 bg-indigo-600 hover:scale-105 hover:bg-indigo-500 transition ease-in-out duration-300 rounded-xl"> Get started </a>
+                    <a href="/#contact" className="w-full flex items-center justify-center px-8 py-3 bg-indigo-600 hover:scale-105 hover:bg-indigo-500 transition ease-in-out duration-300 rounded-xl"> Let's Start </a>
                   </div>
                 </div>
               </div>
