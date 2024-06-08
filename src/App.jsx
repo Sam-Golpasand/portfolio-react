@@ -9,34 +9,46 @@ import Section4 from './components/Section4';
 import Section5 from './components/Section5';
 import Footer from './components/Footer';
 
+const isChromium = /Chrome|Chromium|Edg|Brave/.test(navigator.userAgent);
+
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      smooth: true,
-      smoothTouch: false,
-      direction: 'vertical',
-    });
+    if (!isChromium) {
+      let lenis;
 
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
+      try {
+        lenis = new Lenis({
+          duration: 1.2,
+          easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+          smooth: true,
+          smoothTouch: false,
+          direction: 'vertical',
+        });
+
+        function raf(time) {
+          lenis.raf(time);
+          requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+      } catch (error) {
+        console.error('Lenis initialization failed:', error);
+      }
+
+      return () => {
+        if (lenis) {
+          lenis.destroy();
+        }
+      };
     }
-
-    requestAnimationFrame(raf);
-
-    return () => {
-      lenis.destroy();
-    };
   }, []);
 
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 500);
   }, []);
 
   return (
