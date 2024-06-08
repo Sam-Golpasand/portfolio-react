@@ -10,7 +10,7 @@ export default function Section1() {
   return (
     <>
       <AnimatedWave svgString={svgGreen1} />
-      <section className=" justify-center center text-center p-12 dark">
+      <section className=" justify-center center text-center p-12 dark" id='start'>
         <h1 className="text-6xl  font-bold text-transparent max-[660px]:text-4xl max-[800px]:text-5xl bg-clip-text bg-gradient-to-r h-20 from-green-400 to-blue-500 dark max-xl:h-32">
           Crafting Code, Engineering Elegance
         </h1>

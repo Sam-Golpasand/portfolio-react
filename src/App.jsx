@@ -45,10 +45,18 @@ export default function HomePage() {
     }
   }, []);
 
+
+  
   useEffect(() => {
-    setTimeout(() => {
+    const handleLoad = () => {
       setIsLoading(false);
-    }, 500);
+    };
+
+    window.addEventListener('load', handleLoad);
+
+    return () => {
+      window.removeEventListener('load', handleLoad);
+    };
   }, []);
 
   return (
