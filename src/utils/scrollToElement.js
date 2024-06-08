@@ -1,4 +1,4 @@
-export default function scrollToElementWithOffset(id, offset) {
+export function scrollToElement(id, offset) {
   const element = document.getElementById(id);
   if (element) {
     const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
@@ -9,4 +9,11 @@ export default function scrollToElementWithOffset(id, offset) {
       behavior: "smooth"
     });
   }
+};
+
+export function handleScroll(event, offset) {
+  event.preventDefault();
+  const href = event.currentTarget.getAttribute("href");
+  const id = href.substring(1); // Remove the leading '#' character
+  scrollToElement(id, 150);
 };

@@ -3,7 +3,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import AnimatedWave from './AnimatedWave'
 import { svgGreen1, svgGreen2 } from '../utils/svg';
-
+import {scrollToElement, handleScroll} from '../utils/scrollToElement';
 
 
 export default function Section1() {
@@ -19,7 +19,7 @@ export default function Section1() {
         </p>
         <br />
         <br />
-        <a href="#contact"> <button className="bg-indigo-600 hover:bg-blue-dark hover:scale-105 text-white font-semibold py-3 px-6 rounded-full mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
+        <a href="#contact" onClick={handleScroll}> <button className="bg-indigo-600 hover:bg-blue-dark hover:scale-105 text-white font-semibold py-3 px-6 rounded-full mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
           Wanna work together?
         </button></a>
 

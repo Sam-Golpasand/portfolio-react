@@ -1,14 +1,7 @@
 import React from 'react'
-import scrollToElement from '../utils/scrollToElement';
+import {scrollToElement, handleScroll} from '../utils/scrollToElement';
 
 export default function Navbar() {
-
-  function handleScroll(event) {
-    event.preventDefault();
-    const href = event.currentTarget.getAttribute("href");
-    const id = href.substring(1); // Remove the leading '#' character
-    scrollToElement(id, 150);
-  };
 
   return (
     <header className="fixed top-0 z-40 w-full">

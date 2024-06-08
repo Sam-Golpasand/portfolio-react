@@ -1,8 +1,7 @@
 import React from 'react'
 import AnimatedWave from './AnimatedWave';
 import { svgOrange2 } from '../utils/svg';
-
-
+import {scrollToElement, handleScroll} from '../utils/scrollToElement';
 
 export default function Section4() {
   return (
@@ -18,7 +17,7 @@ export default function Section4() {
               <div className="p-8 flex flex-col justify-between">
                 <div>
                   <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Essential <br />Website</div>
-                  <a href="/#contact" className="block mt-1 text-lg leading-tight font-medium text-white hover:text-indigo-300 transition duration-300">Perfect for startups and personal brands.</a>
+                  <a href="#contact" onClick={handleScroll} className="block mt-1 text-lg leading-tight font-medium text-white hover:text-indigo-300 transition duration-300">Perfect for startups and personal brands.</a>
                   <p className="mt-2 text-gray-300">Establish a strong, engaging digital footprint with our comprehensive starter package website.</p>
                   <div className="mt-4">
                     <span className="text-2xl font-semibold text-white">£499*</span>
@@ -26,7 +25,7 @@ export default function Section4() {
                 </div>
                 <div className="mt-6">
                   <div className="rounded-md shadow">
-                    <a href="/#contact" className="w-full flex items-center justify-center px-8 py-3 bg-indigo-600 hover:scale-105 hover:bg-indigo-500 transition ease-in-out duration-300 rounded-xl"> Let's Start </a>
+                    <a href="#contact" onClick={handleScroll} className="w-full flex items-center justify-center px-8 py-3 bg-indigo-600 hover:scale-105 hover:bg-indigo-500 transition ease-in-out duration-300 rounded-xl"> Let's Start </a>
                   </div>
                 </div>
               </div>
@@ -51,7 +50,7 @@ export default function Section4() {
               <div className="p-8 flex flex-col justify-between">
                 <div>
                   <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Professional <br /> WebApp</div>
-                  <a href="/#contact" className="block mt-1 text-lg leading-tight font-medium text-white  hover:text-indigo-300 transition duration-300">Perfect for larger brands and portfolios.</a>
+                  <a href="#contact" onClick={handleScroll} className="block mt-1 text-lg leading-tight font-medium text-white  hover:text-indigo-300 transition duration-300">Perfect for larger brands and portfolios.</a>
                   <p className="mt-2 text-gray-300">Establish a strong, engaging digital footprint with our all inclusive webapp package.</p>
                   <div className="mt-4">
                     <span className="text-xl font-semibold text-white">Individual Pricing</span>
@@ -59,7 +58,7 @@ export default function Section4() {
                 </div>
                 <div className="mt-6">
                   <div className="rounded-md shadow">
-                    <a href="/#contact" className="w-full flex items-center justify-center px-8 py-3 bg-indigo-600 hover:scale-105 hover:bg-indigo-500 transition ease-in-out duration-300 rounded-xl"> Let's Start </a>
+                    <a href="#contact" onClick={handleScroll} className="w-full flex items-center justify-center px-8 py-3 bg-indigo-600 hover:scale-105 hover:bg-indigo-500 transition ease-in-out duration-300 rounded-xl" > Let's Start </a>
                   </div>
                 </div>
               </div>
