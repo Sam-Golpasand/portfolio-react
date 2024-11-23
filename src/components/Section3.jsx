@@ -14,7 +14,7 @@ const projects = [
     date: "October 2023",
     description: "A comprehensive website solution for businesses, featuring modern design and robust functionality.",
     link: "https://solutionsharp.com/",
-    image: "src/imgs/SolutionSharp.png"
+    image: "/SolutionSharp.png"
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const projects = [
     date: "September 2024",
     description: "An electrician company based in Denmark",
     link: "https://eliteelektro.dk",
-    image: "src/imgs/EliteElektro.png"
+    image: "/EliteElektro.png"
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const projects = [
     date: "August 2024",
     description: "A childrens car rental service for malls and shopping centers.",
     link: "https://gogocar.dk",
-    image: "src/imgs/GoGoCar.png"
+    image: "/GoGoCar.png"
   }
 ]
 
