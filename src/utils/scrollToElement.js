@@ -14,6 +14,6 @@ export function scrollToElement(id, offset) {
 export function handleScroll(event, offset) {
   event.preventDefault();
   const href = event.currentTarget.getAttribute("href");
-  const id = href.substring(1); // Remove the leading '#' character
+  const id = href.substring(1); // Remove the prefix '#' character
   scrollToElement(id, 150);
 };

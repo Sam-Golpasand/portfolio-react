@@ -47,6 +47,14 @@ background-position: center;
 background-size: cover;
 }
 
+.navbarGlass {
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.8px);
+  -webkit-backdrop-filter: blur(6.8px);
+}
+
+
 .dark {
   background-color: #232d3f;
 }

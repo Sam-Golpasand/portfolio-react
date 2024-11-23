@@ -1,5 +1,5 @@
 import React from 'react'
-import avatar from "../imgs/avatar2.jpg"
+import avatar from "../imgs/avatar3.jpg"
 import AnimatedWave from './AnimatedWave'
 import { svgYellow1 } from '../utils/svg';
 
@@ -18,11 +18,11 @@ export default function Section2() {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 transition-all duration-300"></span>
             </h1>
             <p className="font-normal text-sm md:text-base lg:text-lg">
-              My journey in programming is an odyssey across a digital cosmos. I started with fundamental concepts, the constellations that mapped out the basics. Diving deeper, I navigated through the nebulae of data structures and the event horizons of complex algorithms.
+              Hi, I’m Sam, a Full Stack Developer based in Copenhagen Denmark.
               <br /><br />
-              Frameworks and libraries became my vessels, enabling swift passage through new realms of code. Challenges arose, like cryptic bugs, but each was a lesson that expanded my knowledge galaxy.
+              I’m a passionate programmer who discovered the joy of coding at a young age and now runs a Web Solutions Agency. I am always eager to learn new things and believe that the best way to improve is by diving into new subjects and learning through experience. I approach problems with excitement, viewing them as opportunities to grow both professionally and personally.
               <br /><br />
-              Collaboration with fellow coders brought shared victories and insights. Every problem solved and project launched was a star ignited in my expanding universe of experience, a continuous adventure in the ever-evolving expanse of technology.
+
             </p>
           </div>
         </div>

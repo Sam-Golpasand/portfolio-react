@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 z-40 w-full">
     <div className="flex justify-center mt-4">
-      <nav className=" flex navbar w-8/12 max-sm:w-full mx-2 bg-neutral text-neutral-content border-[2px] border-black rounded-full backdrop-blur bg-black/40">
+      <nav className=" flex navbar w-8/12 max-sm:w-full mx-2 bg-neutral text-neutral-content border-[2px] border-black rounded-full backdrop-blur bg-black/40 navbarGlass">
         <div className="flex-1">
           <a href="#start" onClick={handleScroll} className="btn btn-ghost normal-case text-xl font-semibold text-normal not-italic rounded-full">Sam Golpasand</a>
         </div> 
